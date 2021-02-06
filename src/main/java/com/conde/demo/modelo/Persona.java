@@ -15,16 +15,20 @@ public class Persona {
 	private int id;
 	private String name;
 	private String phone;
+	private int idBook;
+	private String businessLine;
 	
 	public Persona() {
 		// TODO Auto-generated constructor stubs
 	}
 
-	public Persona(int id, String name, String phone) {
+	public Persona(int id, String name, String phone, int idBook, String businessLine) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.phone = phone;
+		this.idBook = idBook;
+		this.businessLine = businessLine;
 	}
 
 	public int getId() {
@@ -51,9 +55,26 @@ public class Persona {
 		this.phone = phone;
 	}
 
+	public int getIdBook() {
+		return idBook;
+	}
+
+	public void setIdBook(int idBook) {
+		this.idBook = idBook;
+	}
+
+	public String getBusinessLine() {
+		return businessLine;
+	}
+
+	public void setBusinessLine(String businessLine) {
+		this.businessLine = businessLine;
+	}
+
 	@Override
 	public String toString() {
-		return "Persona [id=" + id + ", name=" + name + ", phone=" + phone + "]";
+		return "Persona [id=" + id + ", name=" + name + ", phone=" + phone + ", idBook=" + idBook + ", businessLine="
+				+ businessLine + "]";
 	}
-	
+
 }
